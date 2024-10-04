@@ -1,0 +1,30 @@
+import = [
+  "/opt/homebrew/lib/node_modules/alacritty-themes/themes/Ayu-Dark.toml"
+]
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+decorations = "Buttonless"
+opacity = 1
+blur = false
+option_as_alt = "Both"
+
+[window.dimensions]
+columns = 120
+lines = 30
+
+[window.position]
+x = 1000
+y = 200
+
+[window.padding]
+x = 10
+y = 10
+
+[font]
+size = 20
+
+  [font.normal]
+  family = "MesloLGLDZ Nerd Font"
