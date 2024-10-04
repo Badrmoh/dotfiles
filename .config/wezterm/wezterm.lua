@@ -7,7 +7,7 @@ local act = wezterm.action
 -- -- fonts
 config.font = wezterm.font("JetBrainsMonoNL Nerd Font")
 config.font_size = 20
-config.line_height = 1
+config.line_height = 1.25
 
 config.window_frame = {
   border_bottom_height = "0.5cell",
@@ -120,7 +120,7 @@ end
 wezterm.on("format-tab-title", function(tab, tabs, panes, conf, hover, max_width)
   local background = "#65737E"
   local foreground = "#F0F2F5"
-  local edge_background = "#FAFAF9"
+  local edge_background = "#1A1B27"
   --
   if tab.is_active or hover then
     background = "#E5C07B"
@@ -152,16 +152,16 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, conf, hover, max_width
 end)
 
 config.hide_tab_bar_if_only_one_tab = true
-config.window_background_opacity = 0.8
-config.macos_window_background_blur = 60
+-- config.window_background_opacity = 0.8
+-- config.macos_window_background_blur = 60
 
-config.color_scheme = "GruvboxLight"
-config.colors = {
-  background = "#FAFAF9",
-  tab_bar = {
-    background = "#FAFAF9",
-  },
-}
+config.color_scheme = "Tokyo Night"
+-- config.colors = {
+--   background = "#FAFAF9",
+--   tab_bar = {
+--     background = "#FAFAF9",
+--   },
+-- }
 
 -- Cursor
 config.default_cursor_style = 'BlinkingUnderline'
