@@ -23,4 +23,4 @@ _darcs
 ^/COPYING
 
 # Mine ignore list
-.config/raycast
+/.config/raycast
