@@ -4,7 +4,7 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 local act = wezterm.action
 
--- fonts
+-- -- fonts
 config.font = wezterm.font("JetBrainsMonoNL Nerd Font")
 config.font_size = 20
 config.line_height = 1
@@ -188,4 +188,5 @@ config.initial_rows = 33
 config.initial_cols = 123
 
 return config
+
 
