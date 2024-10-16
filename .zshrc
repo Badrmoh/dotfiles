@@ -2,6 +2,20 @@ if [[ -f "/opt/homebrew/bin/brew" ]] then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
+# inputrc
+# bindkey
+bindkey "^U" backward-kill-line
+bindkey "^u" backward-kill-line
+bindkey "^[l" down-case-word
+bindkey "^[L" down-case-word
+
+# alt+<- | alt+->
+bindkey "^[f" forward-word
+bindkey "^[b" backward-word
+
+# ctrl+<- | ctrl+->
+bindkey "^[[1;5D" backward-word
+bindkey "^[[1;5C" forward-word
 source $HOME/.envs
 source $HOME/.aliases
 
@@ -131,4 +145,10 @@ if [[ $(zoxide --version) ]];then
   alias cd="z"
   unalias zi 2> /dev/null || true
   eval "$(zoxide init zsh)"
+fi
+
+
+# direnv
+if [[ $(direnv --version) ]];then
+  eval "$(direnv hook zsh)"
 fi
